@@ -1,7 +1,7 @@
 <html>
 <head>
 	<title>CS Capstone</title>
-	<link rel="stylesheet" type="text/css" href="dabl_interface_style_sheet.css">
+	<link rel="stylesheet" type="text/css" href="visualization_site.css">
 
 </head>
 
@@ -15,6 +15,12 @@
 
 </div>
 	
+<h2><p> Do you like it? 
+	<a href="VisualizationSite.php" class="button">Yes!</a>
+	</p></h2>
+	<br>
+	<a href="VisualizationSite.php" class="button">Reload?</a>
+
 	
 </body>
 </html>
