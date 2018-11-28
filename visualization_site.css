@@ -13,8 +13,6 @@
 		font-size: 25px;
 		display: inline-block;
 	}
-
-
 	.button {
 		-moz-box-shadow:inset 0px 0px 0px 0px #54a3f7;
 		-webkit-box-shadow:inset 0px 0px 0px 0px #54a3f7;
@@ -96,3 +94,25 @@
 		position:relative;
 		top:1px;
 	}
+
+	.short_line {
+		width: 70%;
+		height: 4px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color:#666;
+		border: 0 none;
+		margin-top: 10px;
+		margin-bottom:10px;	
+	}
+		.long_line {
+		width: 85%;
+		height: 4px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color:#666;
+		border: 0 none;
+		margin-top: 10px;
+		margin-bottom:10px;	
+	}
+
