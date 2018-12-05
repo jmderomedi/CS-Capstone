@@ -8,9 +8,11 @@
 <body>
 	<div id="navbar">
 		<a href="#top_page">Top</a>
+		<a href="#about">About Us</a>
 		<a href="#crime">Crime</a>
 		<a href="#police">Police</a>
 		<a href="#stats">Statistics</a>
+		<a href="#contribution">Contact Us </a>
 	</div>
 
 	<script type="text/javascript">
@@ -39,20 +41,25 @@
 	<br>
 	<hr class = "short_line">
 	<hr class = "long_line">
-	<hr class = "short_line">
+	<hr class = "short_line" id="about">
 
 	<br>
 	<form class="example" action="https://blankslate.io/">
 		<input type="text" placeholder="What are you looking for..." name="search">
 		<button type="submit"><i class="fa fa-search"></i></button>
 	</form>
+	
+	<br>
+	<hr class = "short_line">
+	<hr class = "long_line">
+	<hr class = "short_line">
 
 	<br>
 	<!--Left picture-->	
 	<div class = "row">
 		<div class = "column">
 			<div class = "picture_container">
-				<img class = "image_1" src = "Victor_photo.jpg" alt = "author_victor">
+				<img class = "image_left" src = "Victor_photo.jpg" alt = "author_victor">
 				<div class = "picture_overlay_left">
 					<div class = "picture_text">
 						<h1>Ziyang She</h1>
@@ -80,7 +87,7 @@
 		<!--Right Picture-->
 		<div class = "column">
 			<div class = "picture_container">
-				<img class = "image" src = "JRPicture3.jpg" alt = "author_JR">
+				<img class = "image_right" src = "JRPicture3.jpg" alt = "author_JR">
 				<div class = "picture_overlay_right">
 					<div class = "picture_text">
 						<h1>Karefa Kargbo (JR)</h1>
@@ -93,26 +100,25 @@
 		</div>
 	</div>
 
-	<br>
+	<!--<br>
 	<hr class = "short_line">
 	<hr class = "long_line">
 	<hr class = "short_line">
 
-	<br>
+	<br>-->
 
 
 	<br>
 	<hr class = "short_line">
 	<hr class = "long_line">
-	<hr class = "short_line">
+	<hr class = "short_line" id="crime">
 
 	<br>
 	<div class = "map">
-		<div class = "paragraph" id="crime">
+		<div class = "paragraph" >
 			<p class = "crime_explaination">This is where we explain the crime part</p>
 		</div>
-		<h2>United States Crime</h2>
-		<br>
+		<h1>United States Crime</h1>
 		<iframe width="80%" height="520" frameborder="1" src="https://jmderomedi.carto.com/builder/edfce289-d7bf-4528-8c4e-239c5837bf17/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 		<br>
 		<h3>Explain how to navigate the map</h3>
@@ -121,15 +127,14 @@
 	<br>
 	<hr class = "short_line">
 	<hr class = "long_line">
-	<hr class = "short_line">
+	<hr class = "short_line" id="police">
 
 	<br>
 	<div class = "map">
-		<div class = "paragraph" id="police">
+		<div class = "paragraph" >
 			<p class = "police_explaination">This is where we explain the police part</p>
 		</div>
-		<h2>United States Low Enforcement</h2>
-		<br>
+		<h1>United States Low Enforcement</h1>
 		<iframe width="80%" height="520" frameborder="1" src="https://jmderomedi.carto.com/builder/c07925e1-5c82-45ac-9811-e5e2123f9e87/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 		<br>
 		<h3>Explain how to navigate the map</h3>
@@ -138,21 +143,19 @@
 	<br>
 	<hr class = "short_line">
 	<hr class = "long_line">
-	<hr class = "short_line">
+	<hr class = "short_line" id="stats">
 
 	<br>
-	<div class = "map" id="stats">
-		<h2>Police vs Crime</h2>
-		<br>
-		<iframe width="80%" height="520" frameborder="0" src="https://jmderomedi.carto.com/builder/dae6e858-e428-4081-a4ad-9169029635e1/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+	<div class = "map" >
+		<h1>Police vs Crime</h1>
+		<iframe width="80%" height="520" frameborder="1" src="https://jmderomedi.carto.com/builder/dae6e858-e428-4081-a4ad-9169029635e1/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 		<br>
 		<h3>Explain how to navigate the map</h3>
 	</div>
 
 	<br>
 	<div class = "map">
-		<h2>Citizens vs Crime</h2>
-		<br>
+		<h1>Citizens vs Crime</h1>
 		<iframe width="80%" height="520" frameborder="1" src="https://jmderomedi.carto.com/builder/f7ae15d6-8fde-4b12-8e9e-fcbcbdd33b59/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 		<br>
 		<h3>Explain how to navigate the map</h3>
@@ -164,7 +167,7 @@
 	<hr class = "short_line">
 
 	<br>
-	<div class = "paragraph">
+	<div class = "paragraph" id="contribution">
 		<p class = "contributions">This is where we place the contributions</p>
 		<br>
 		<p class = "contact_us">This is where we place the contact us and license stuff</p>
