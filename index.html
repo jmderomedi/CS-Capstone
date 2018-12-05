@@ -2,11 +2,31 @@
 <head>
 	<title>CS Capstone</title>
 	<link rel="stylesheet" type="text/css" href="visualization_site.css">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-	<div class = "header" >
+	<div id="navbar">
+		<a href="#top_page">Top</a>
+		<a href="#crime">Crime</a>
+		<a href="#police">Police</a>
+		<a href="#stats">Statistics</a>
+	</div>
+
+	<script type="text/javascript">
+		window.onscroll = function() {myFunction()};
+		var navbar = document.getElementById("navbar");
+		var sticky = navbar.offsetTop;
+		function myFunction() {
+			if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+			} else {
+				navbar.classList.remove("sticky");
+			}
+		}
+	</script>
+
+	<div class = "header"  id="top_page">
 		<h1 class = main_title>Police vs. Crime
 			<h2 class = "sub_title">Visualizing crime and police in the United States</h2>
 		</h1>
@@ -15,16 +35,24 @@
 	<div class = "paragraph">
 		<p class = "explaination">This site provides an overview and comparisons of varous different government datasets, allowing us to see the correlation between police actions and the amount of crime in the area. The data we have is divided by state, allowing us to look at how differences across states can affect the results of the data. Hopefully, these reports can help police departments, officers, and elected officials make better decisions to keep citizens safe.</p>
 	</div>
+
 	<br>
 	<hr class = "short_line">
 	<hr class = "long_line">
 	<hr class = "short_line">
-	<br>
 
+	<br>
+	<form class="example" action="https://blankslate.io/">
+		<input type="text" placeholder="What are you looking for..." name="search">
+		<button type="submit"><i class="fa fa-search"></i></button>
+	</form>
+
+	<br>
+	<!--Left picture-->	
 	<div class = "row">
 		<div class = "column">
 			<div class = "picture_container">
-				<img class = "image_1" src = "Victor_photo.jpg" alt = "space_cat">
+				<img class = "image_1" src = "Victor_photo.jpg" alt = "author_victor">
 				<div class = "picture_overlay_left">
 					<div class = "picture_text">
 						<h1>Ziyang She</h1>
@@ -35,7 +63,7 @@
 				</div>
 			</div>
 		</div>
-
+		<!--Center Picture-->
 		<div class = "column">
 			<div class = "picture_container">
 				<img class = "image_up" src = "James_Photo.jpg" alt = "author_james">
@@ -49,16 +77,16 @@
 				</div>
 			</div>
 		</div>
-
+		<!--Right Picture-->
 		<div class = "column">
 			<div class = "picture_container">
 				<img class = "image" src = "JRPicture3.jpg" alt = "author_JR">
 				<div class = "picture_overlay_right">
 					<div class = "picture_text">
-					<h1>Karefa Kargbo (JR)</h1>
-					<h2>Content Writer</h2>
-					<p>Computer Science Major</p>
-					<p>Economics Major</p>
+						<h1>Karefa Kargbo (JR)</h1>
+						<h2>Content Writer</h2>
+						<p>Computer Science Major</p>
+						<p>Economics Major</p>
 					</div>
 				</div>
 			</div>
@@ -69,70 +97,78 @@
 	<hr class = "short_line">
 	<hr class = "long_line">
 	<hr class = "short_line">
+
 	<br>
 
-	<!-- Load icon library -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- The form -->
-	<form class="example" action="https://blankslate.io/">
-  		<input type="text" placeholder="What are you looking for..." name="search">
-  		<button type="submit"><i class="fa fa-search"></i></button>
-	</form>
 
 	<br>
 	<hr class = "short_line">
 	<hr class = "long_line">
 	<hr class = "short_line">
-	<br>
 
+	<br>
 	<div class = "map">
-		<div class = "paragraph">
+		<div class = "paragraph" id="crime">
 			<p class = "crime_explaination">This is where we explain the crime part</p>
 		</div>
+		<h2>United States Crime</h2>
+		<br>
 		<iframe width="80%" height="520" frameborder="1" src="https://jmderomedi.carto.com/builder/edfce289-d7bf-4528-8c4e-239c5837bf17/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+		<br>
+		<h3>Explain how to navigate the map</h3>
 	</div>
 
 	<br>
 	<hr class = "short_line">
 	<hr class = "long_line">
 	<hr class = "short_line">
+
 	<br>
-	
 	<div class = "map">
-		<div class = "paragraph">
+		<div class = "paragraph" id="police">
 			<p class = "police_explaination">This is where we explain the police part</p>
 		</div>
+		<h2>United States Low Enforcement</h2>
+		<br>
 		<iframe width="80%" height="520" frameborder="1" src="https://jmderomedi.carto.com/builder/c07925e1-5c82-45ac-9811-e5e2123f9e87/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+		<br>
+		<h3>Explain how to navigate the map</h3>
 	</div>
 
 	<br>
 	<hr class = "short_line">
 	<hr class = "long_line">
 	<hr class = "short_line">
+
 	<br>
-	
-	<div class = "map">
-		<p>This is the "Police vs Crime map"</p>
+	<div class = "map" id="stats">
+		<h2>Police vs Crime</h2>
+		<br>
 		<iframe width="80%" height="520" frameborder="0" src="https://jmderomedi.carto.com/builder/dae6e858-e428-4081-a4ad-9169029635e1/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+		<br>
+		<h3>Explain how to navigate the map</h3>
 	</div>
+
 	<br>
 	<div class = "map">
-		<p>This is the "Citizen vs Crime map"</p>
+		<h2>Citizens vs Crime</h2>
+		<br>
 		<iframe width="80%" height="520" frameborder="1" src="https://jmderomedi.carto.com/builder/f7ae15d6-8fde-4b12-8e9e-fcbcbdd33b59/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+		<br>
+		<h3>Explain how to navigate the map</h3>
 	</div>
 
 	<br>
 	<hr class = "short_line">
 	<hr class = "long_line">
 	<hr class = "short_line">
-	<br>
 
+	<br>
 	<div class = "paragraph">
 		<p class = "contributions">This is where we place the contributions</p>
 		<br>
 		<p class = "contact_us">This is where we place the contact us and license stuff</p>
 	</div>
-
 	<h2><p> Do you like it so far? 
 		<a href="temp_page.html" class="button">Yes!</a>
 	</p></h2>
