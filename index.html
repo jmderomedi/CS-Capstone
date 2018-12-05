@@ -6,7 +6,7 @@
 </head>
 
 <body>
-	<div id="navbar">
+	<div id="navbar_top">
 		<a href="#top_page">Top</a>
 		<a href="#about">About Us</a>
 		<a href="#crime">Crime</a>
@@ -17,7 +17,7 @@
 
 	<script type="text/javascript">
 		window.onscroll = function() {myFunction()};
-		var navbar = document.getElementById("navbar");
+		var navbar = document.getElementById("navbar_top");
 		var sticky = navbar.offsetTop;
 		function myFunction() {
 			if (window.pageYOffset >= sticky) {
@@ -41,7 +41,7 @@
 	<br>
 	<hr class = "short_line">
 	<hr class = "long_line">
-	<hr class = "short_line" id="about">
+	<hr class = "short_line" >
 
 	<br>
 	<form class="example" action="https://blankslate.io/">
@@ -52,53 +52,64 @@
 	<br>
 	<hr class = "short_line">
 	<hr class = "long_line">
-	<hr class = "short_line">
+	<hr class = "short_line" id="about">
 
 	<br>
-	<!--Left picture-->	
-	<div class = "row">
-		<div class = "column">
-			<div class = "picture_container">
-				<img class = "image_left" src = "Victor_photo.jpg" alt = "author_victor">
-				<div class = "picture_overlay_left">
-					<div class = "picture_text">
-						<h1>Ziyang She</h1>
-						<h2>Data analyst</h2>
-						<p>Computer Science Major</p>
-						<p></p>
+	<br>
+	<br>
+	<div class = "about_us">
+		<h1>About Us</h1>	
+		<div class = "row">
+			<div class = "column">
+				<div class = "picture_container">
+					<img class = "image_left" src = "Victor_photo.jpg" alt = "author_victor">
+					<div class = "picture_overlay_left">
+						<div class = "picture_text">
+							<h1>Ziyang She</h1>
+							<h2>Data analyst</h2>
+							<p>Computer Science Major</p>
+							<p></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--Center Picture-->
+			<div class = "column">
+				<div class = "picture_container">
+					<img class = "image_up" src = "James_Photo.jpg" alt = "author_james">
+					<div class = "picture_overlay_up">
+						<div class = "picture_text">
+							<h1>James Deromedi</h1>
+							<h2>Map Creator</h2>
+							<p>Computer Science Major</p>
+							<p>Physics Minor</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--Right Picture-->
+			<div class = "column">
+				<div class = "picture_container">
+					<img class = "image_right" src = "JRPicture3.jpg" alt = "author_JR">
+					<div class = "picture_overlay_right">
+						<div class = "picture_text">
+							<h1>Karefa Kargbo (JR)</h1>
+							<h2>Content Writer</h2>
+							<p>Computer Science Major</p>
+							<p>Economics Major</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!--Center Picture-->
-		<div class = "column">
-			<div class = "picture_container">
-				<img class = "image_up" src = "James_Photo.jpg" alt = "author_james">
-				<div class = "picture_overlay_up">
-					<div class = "picture_text">
-						<h1>James Deromedi</h1>
-						<h2>Map Creator</h2>
-						<p>Computer Science Major</p>
-						<p>Physics Minor</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--Right Picture-->
-		<div class = "column">
-			<div class = "picture_container">
-				<img class = "image_right" src = "JRPicture3.jpg" alt = "author_JR">
-				<div class = "picture_overlay_right">
-					<div class = "picture_text">
-						<h1>Karefa Kargbo (JR)</h1>
-						<h2>Content Writer</h2>
-						<p>Computer Science Major</p>
-						<p>Economics Major</p>
-					</div>
-				</div>
-			</div>
-		</div>
+		<br>
+		<p>This is paragraph about us the creators</p>
 	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
 
 	<!--<br>
 	<hr class = "short_line">
@@ -164,10 +175,14 @@
 	<br>
 	<hr class = "short_line">
 	<hr class = "long_line">
-	<hr class = "short_line">
-
+	<hr class = "short_line" id="contribution">
+	
 	<br>
-	<div class = "paragraph" id="contribution">
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class = "paragraph" >
 		<p class = "contributions">This is where we place the contributions</p>
 		<br>
 		<p class = "contact_us">This is where we place the contact us and license stuff</p>
@@ -175,8 +190,13 @@
 	<h2><p> Do you like it so far? 
 		<a href="temp_page.html" class="button">Yes!</a>
 	</p></h2>
+	<br>
+	<br>
 
-
-
+	<div id="navbar_bottom">
+		<a href="#top_page">Top</a>
+		<a href="#about">About Us</a>
+		<a href="#contribution">Contact Us </a>
+	</div>
 </body>
 </html>
