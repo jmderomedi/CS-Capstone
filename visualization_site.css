@@ -1,23 +1,23 @@
 	body {
 		text-align: center;
-		font-family: Courier;
 	}
 	
 	h1 {
 		position: relative;
-		font-size: 45px;
+		font-size: 55px;
 	}
 
 	h2 {
 		position: relative;
-		font-size: 25px;
+		font-size: 35px;
 		display: inline-block;
 	}
 	h3 {
 		position: relative;
-		font-size: 15px;
+		font-size: 25px;
 		font-weight: normal;
 	}
+	
 	.button {
 		-moz-box-shadow:inset 0px 0px 0px 0px #54a3f7;
 		-webkit-box-shadow:inset 0px 0px 0px 0px #54a3f7;
@@ -133,8 +133,8 @@
 	}
 	.picture_container {
 		position: relative;
-		width: 500px;
-		height: 300px;
+		width: 490px;
+		height: 325px;
 		overflow: hidden;
 		object-fit:scale-down;
 	}
