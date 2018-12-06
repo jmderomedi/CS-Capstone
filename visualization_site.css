@@ -17,7 +17,11 @@
 		font-size: 25px;
 		font-weight: normal;
 	}
-	
+	h4{
+		position: relative;
+		font-size: 15px;
+		font-weight: normal;
+	}
 	.button {
 		-moz-box-shadow:inset 0px 0px 0px 0px #54a3f7;
 		-webkit-box-shadow:inset 0px 0px 0px 0px #54a3f7;
