@@ -22,6 +22,16 @@
 		font-size: 15px;
 		font-weight: normal;
 	}
+
+	table, th, td {
+      border: 1px solid black;
+      text-align: left;
+    }
+
+    p{
+    	font-size: 30px;
+    }
+
 	.button {
 		-moz-box-shadow:inset 0px 0px 0px 0px #54a3f7;
 		-webkit-box-shadow:inset 0px 0px 0px 0px #54a3f7;
