@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>State Data</title>
-  <link rel="stylesheet" type="text/css" href="visualization_site.css">
+  <title>Police Assault Data</title>
+  <link rel="stylesheet" type="text/css" href="index_visual.css">
   <link rel="stylesheet" type="text/css" href="pagebu.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Judson' rel='stylesheet'>
@@ -10,25 +10,34 @@
   body{
     font-family: 'Judson';
   }
-</head>
+  </head>
 
-<style>
-    table, th, td {
-      border: 1px solid black;
-    }
+  <style>
+  table, th, td {
+    border: 1px solid black;
+  }
 </style>
 
 <body>
-  
+
   <div id="navbar_top">
     <a href="#top_page">Top</a>
-    <a href="#about">About Us</a>
-    <a href="#crime">Crime</a>
-    <a href="#police">Police</a>
-    <a href="#stats">Statistics</a>
+    <a href="index.html#searchParam">Return to Main</a>
     <a href="#contribution">Contact Us </a>
   </div>
 
+  <script type="text/javascript">
+    window.onscroll = function() {myFunction()};
+    var navbar = document.getElementById("navbar_top");
+    var sticky = navbar.offsetTop;
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
 
   <div class = "header"  id="top_page">
     <h1 class = main_title>Crime Analytics</h1>
@@ -38,12 +47,12 @@
 
 
   <br>
-    <hr class = "short_line">
-    <hr class = "long_line">
-    <hr class = "short_line" id="about">
+  <hr class = "short_line">
+  <hr class = "long_line">
+  <hr class = "short_line" id="about">
   <br>
 
-  <h2>Law Enforcement Officers Assaulted and Injured with Firearms or Knives/Other Cutting Instruments</h2>
+  <h2 id = "month">Law Enforcement Officers Assaulted</h2>
   <p>Month of Incident, 2011–2015</p>
 
   <table style="width:80%" align="center">
@@ -64,7 +73,7 @@
       <td>126</td>
       <td>106</td>
       <td>85</td>
-   </tr>
+    </tr>
     <tr>
       <td>Jabuary</td>
       <td>59</td>
@@ -174,14 +183,16 @@
       <td>2</td>
     </tr>
   </table>
-
+  <h2>
+    <a href="index.html#searchParam" class="button">Return</a>
+  </h2>
   <br>
-    <hr class = "short_line">
-    <hr class = "long_line">
-    <hr class = "short_line" id="about">
+  <hr class = "short_line">
+  <hr class = "long_line">
+  <hr class = "short_line" id="about">
   <br>
 
-  <h2>Law Enforcement Officers Assaulted and Injured with Firearms or Knives/Other Cutting Instruments</h2>
+  <h2 id = "day">Law Enforcement Officers Assaulted</h2>
   <p>Day of Incident, 2011–2015</p>
 
   <table style="width:80%" align="center">
@@ -267,14 +278,16 @@
       <td>6</td>
     </tr>
   </table>
-
+  <h2>
+    <a href="index.html#searchParam" class="button">Return</a>
+  </h2>
   <br>
-    <hr class = "short_line">
-    <hr class = "long_line">
-    <hr class = "short_line" id="about">
+  <hr class = "short_line">
+  <hr class = "long_line">
+  <hr class = "short_line" id="about">
   <br>
 
-  <h2>Law Enforcement Officers Assaulted and Injured with Firearms or Knives/Other Cutting Instruments</h2>
+  <h2>Law Enforcement Officers Assaulted</h2>
   <p>Time of Incident, 2011–2015</p>
 
 
@@ -415,14 +428,16 @@
       <td>0</td>
     </tr>
   </table>
-
+  <h2>
+    <a href="index.html#searchParam" class="button">Return</a>
+  </h2>
   <br>
-    <hr class = "short_line">
-    <hr class = "long_line">
-    <hr class = "short_line" id="about">
+  <hr class = "short_line">
+  <hr class = "long_line">
+  <hr class = "short_line" id="about">
   <br>
 
-  <h2>Law Enforcement Officers Assaulted and Injured with Firearms or Knives/Other Cutting Instruments</h2>
+  <h2 id = "lighting">Law Enforcement Officers Assaulted</h2>
   <p>Lighting and Weather/Environmental Conditions by Location of Incident, 2011-2015</p>
 
   <table style="width:80%" align="center">
@@ -697,14 +712,16 @@
       <th>0</th>
     </tr>
   </table>
-
+  <h2>
+    <a href="index.html#searchParam" class="button">Return</a>
+  </h2>
   <br>
-    <hr class = "short_line">
-    <hr class = "long_line">
-    <hr class = "short_line" id="about">
+  <hr class = "short_line">
+  <hr class = "long_line">
+  <hr class = "short_line" id="about">
   <br>
 
-  <h2>Law Enforcement Officers Assaulted and Injured with Firearms or Knives/Other Cutting Instruments</h2>
+  <h2 id = "race_sex">Law Enforcement Officers Assaulted</h2>
   <p>Race and Sex of Victim Officers and Age group, 2011–2015</p>
 
   <table style="width:80%" align="center">
@@ -859,14 +876,16 @@
       <td> 4</td>
     </tr>
   </table>
-
+  <h2>
+    <a href="index.html#searchParam" class="button">Return</a>
+  </h2>
   <br>
-    <hr class = "short_line">
-    <hr class = "long_line">
-    <hr class = "short_line" id="about">
+  <hr class = "short_line">
+  <hr class = "long_line">
+  <hr class = "short_line" id="about">
   <br>
 
-  <h2>Law Enforcement Officers Assaulted and Injured with Firearms or Knives/Other Cutting Instruments</h2>
+  <h2 id = "weapon">Law Enforcement Officers Assaulted</h2>
   <p>Type of Weapon, 2011–2015</p>
 
   <table style="width:80%" align="center">
@@ -952,14 +971,16 @@
       <td>42</td>
     </tr>
   </table>
-
+  <h2>
+    <a href="index.html#searchParam" class="button">Return</a>
+  </h2>
   <br>
-    <hr class = "short_line">
-    <hr class = "long_line">
-    <hr class = "short_line" id="about">
+  <hr class = "short_line">
+  <hr class = "long_line">
+  <hr class = "short_line" id="about">
   <br>
 
-  <h2>Law Enforcement Officers Assaulted and Injured with Firearms or Knives/Other Cutting Instruments</h2>
+  <h2 id = "body_armor">Law Enforcement Officers Assaulted</h2>
   <p>Number of Victim Officers Wearing Body Armor, Holster, or Uniform, 2011–2015</p>
 
   <table style="width:80%" align="center">
@@ -1064,6 +1085,9 @@
       <td> 0</td>
     </tr>
   </table>
+  <h2>
+  <a href="index.html#searchParam" class="button">Return</a>
+</h2>
 <!--
   <br>
     <hr class = "short_line">
@@ -1072,40 +1096,40 @@
   <br>
 -->
 
-  <span>
-    <hr class = "short_line">
-  </span>
+<span>
+  <hr class = "short_line">
+</span>
 
-  <a href="#" class="previous round">&#8249;</a>
-  <a href="#" class="next round">&#8250;</a>
+<a href="#" class="previous round">&#8249;</a>
+<a href="#" class="next round">&#8250;</a>
 
-  <br>
-    <hr class = "short_line">
-    <hr class = "long_line">
-    <hr class = "short_line" id="contribution">
+<br>
+<hr class = "short_line">
+<hr class = "long_line">
+<hr class = "short_line" id="contribution">
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class = "paragraph" >
+  <h4 class = "contributions">The data was collected through public access goverment websites, data.gov and fbi.gov</h4>
+  <h4 class = "contact_us">For any questions please us at jd1504a@american.edu.</h4>
   <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <div class = "paragraph" >
-    <h4 class = "contributions">The data was collected through public access goverment websites, data.gov and fbi.gov</h4>
-    <p class = "contact_us">For any questions please us at jd1504a@american.edu.</p>
-    <br>
-  </div>
+</div>
 
-  <div id="navbar_bottom">
-    <a href="#top_page">Top</a>
-    <a href="#about">About Us</a>
-    <a href="#contribution">Contact Us </a>
-  </div>
+<div id="navbar_bottom">
+  <a href="#top_page">Top</a>
+  <a href="#about">About Us</a>
+  <a href="#contribution">Contact Us </a>
+</div>
 
-  <br>
-    <h2>
-      <a href="index.html" class="button">Return</a>
-    </h2>
-  <br>
+<br>
+<h2>
+  <a href="index.html#searchParam" class="button">Return</a>
+</h2>
+<br>
 
 </body>
 </html>
